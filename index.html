@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <title>Web Cviko</title>
+  <style>
+    :root { color-scheme: dark; --bg:#09090b; --panel:#151519; --line:#2a2a32; --text:#f5f5f7; --muted:#a1a1aa; --accent:#8b5cf6; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; padding:28px 16px;
+      display:flex; align-items:center; justify-content:center;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      color:var(--text);
+      background:radial-gradient(ellipse at top, #21153b 0%, var(--bg) 58%);
+    }
+    main { width:100%; max-width:520px; }
+    .card { background:rgba(21,21,25,.94); border:1px solid var(--line); border-radius:24px; padding:28px; box-shadow:0 20px 60px #0008; }
+    .logo { width:76px; height:76px; display:grid; place-items:center; margin:0 auto 18px; border-radius:22px; background:linear-gradient(135deg,#a78bfa,#6d28d9); font-size:34px; font-weight:900; }
+    h1 { text-align:center; margin:0; font-size:30px; letter-spacing:-.7px; }
+    .subtitle { text-align:center; color:var(--muted); margin:10px 0 26px; line-height:1.55; }
+    .links { display:grid; gap:12px; }
+    .link { display:flex; align-items:center; gap:14px; padding:16px; border:1px solid var(--line); border-radius:15px; text-decoration:none; color:var(--text); background:#1c1c22; transition:transform .15s,border-color .15s; }
+    .link:hover { transform:translateY(-2px); border-color:var(--accent); }
+    .symbol { width:42px; height:42px; display:grid; place-items:center; flex-shrink:0; border-radius:12px; background:#2b2140; font-size:21px; }
+    .link strong { display:block; font-size:16px; }
+    .link small { display:block; color:var(--muted); margin-top:3px; }
+    footer { text-align:center; color:#777781; font-size:12px; margin-top:20px; }
+    @media(max-width:380px) { .card { padding:22px 17px; } h1 { font-size:26px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <div class="logo">C</div>
+      <h1>Web Cviko</h1>
+      <p class="subtitle">Welcome! Pilih salah satu link di bawah ini untuk menghubungi atau bergabung.</p>
+      <div class="links">
+        <!-- Ubah URL WhatsApp di bagian href berikut jika nomornya berubah -->
+        <a class="link" href="https://wa.me/6281389309366" target="_blank" rel="noopener noreferrer">
+          <span class="symbol">✆</span>
+          <span><strong>WhatsApp</strong><small>Hubungi Cviko secara langsung</small></span>
+        </a>
+        <!-- Ubah URL Discord di bagian href berikut jika invite berubah -->
+        <a class="link" href="https://discord.gg/jeqHPSCE" target="_blank" rel="noopener noreferrer">
+          <span class="symbol">◈</span>
+          <span><strong>Discord</strong><small>Gabung ke komunitas Cviko</small></span>
+        </a>
+      </div>
+    </section>
+    <footer>© <span id="year"></span> Cviko</footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
