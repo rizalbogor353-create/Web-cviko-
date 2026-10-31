@@ -409,7 +409,7 @@ a:focus:not(:focus-visible),button:focus:not(:focus-visible) { outline:none !imp
 <div class="stat"><span>SPECIALIS</span><b>3D Skin Art</b></div><div class="stat"><span>NEGARA</span><b>Indonesia</b></div>
 <div class="stat"><span>PLATFORM</span><b>Java & Bedrock</b></div><div class="stat"><span>PENGERJAAN</span><b>2–7 Hari</b></div>
 </div></section>
-<section class="section" id="packs"><div class="section-head"><div><div class="eyebrow">DISCOVER MY WORK</div><h2>Texture & Packs</h2></div><p>Resource pack pilihan dan karya Minecraft. Klik tombol untuk menuju halaman download yang kamu sediakan.</p></div>
+<section class="section" id="packs"><div class="section-head"><div><div class="eyebrow">DISCOVER MY WORK</div><h2>Texture Packs</h2></div><p>Resource pack pilihan dan karya Minecraft. Klik tombol untuk menuju halaman download.</p></div>
 <div class="grid resource-grid" id="packGrid">
 <article class="card product resource-card"><div class="product-art"><img src="assets/logo1.png" alt="Ciso Hungry 3D Tools"></div><div class="product-body"><div class="tag">RESOURCE PACK</div><h3>Ciso Hungry 3D Tools</h3><p>Custom Minecraft tools dengan nuansa merah dan detail 3D.</p><div class="product-foot"><span class="price">FREE</span><button class="btn download-btn" type="button" data-pack="ciso-hungry">Download ↗</button></div></div></article>
 <article class="card product resource-card"><div class="product-art"><img src="assets/logo2.png" alt="Depth of Cyan"></div><div class="product-body"><div class="tag">RESOURCE PACK</div><h3>Depth of Cyan</h3><p>Showcase pack Minecraft dengan visual dan identitas khas.</p><div class="product-foot"><span class="price">FREE</span><button class="btn download-btn" type="button" data-pack="depth-cyan">Download ↗</button></div></div></article>
@@ -422,7 +422,7 @@ a:focus:not(:focus-visible),button:focus:not(:focus-visible) { outline:none !imp
 <section class="section" id="contact"><div class="section-head"><div><div class="eyebrow">LET'S CONNECT</div><h2>Contact Cviko</h2></div><p>Untuk pertanyaan, kolaborasi, dan pemesanan commission.</p></div><div class="contact-grid"><a class="contact" href="https://discord.gg/P5JUaJKN69" target="_blank" rel="noopener noreferrer"><b>Discord</b><span class="tiny">Join community / Order ticket ↗</span></a><a class="contact" href="https://wa.me/6281389309366" target="_blank" rel="noopener noreferrer"><b>WhatsApp</b><span class="tiny">Direct contact ↗</span></a></div></section>
 <details class="admin"><summary>ADMIN DEMO — Edit status & slot (tersimpan di browser ini)</summary><div class="admin-grid">
 <label>Commission status<select id="adminStatus"><option value="open">Open</option><option value="closed">Closed</option></select></label>
-<label>Slot terisi (0–5)<input type="number" min="0" max="5" id="adminSlots" value="1"></label>
+<label>Slot terisi (0–5)<input type="number" min="0" max="7" id="adminSlots" value="1"></label>
 <label>Discord URL<input id="adminDiscord" placeholder="https://discord.gg/..." /></label>
 <label>WhatsApp URL<input id="adminWhatsApp" placeholder="https://wa.me/62..." /></label>
 <label style="grid-column:1/-1">Teks intro<textarea id="adminIntro">Minecraft creations, custom tools, textures and resource packs. Explore my works and find something made for your world.</textarea></label>
@@ -601,7 +601,7 @@ const socialLinks = {
   discord: ""
 };
 if (socialLinks.channel) $('channelFloat').href = socialLinks.channel;
-else $('channelFloat').addEventListener('click', e => { e.preventDefault(); alert('Tambahkan link saluran pada konfigurasi socialLinks.'); });
+else $('channelFloat').addEventListener('click', e => { e.preventDefault(); alert('https://whatsapp.com/channel/0029VbBOVQQ59PwY74p4oT2j.'); });
 if (socialLinks.discord) $('discordFloat').href = socialLinks.discord;
 else $('discordFloat').addEventListener('click', e => { e.preventDefault(); alert('Tambahkan link Discord pada konfigurasi socialLinks.'); });
 
