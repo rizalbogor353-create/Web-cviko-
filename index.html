@@ -538,13 +538,13 @@ $('bedrockDownload').addEventListener('click', () => {
 
 // Ganti kedua URL ini dengan link saluran dan server Discord milikmu.
 const socialLinks = {
-  WhatsApp Ch: "https://whatsapp.com/channel/0029VbBOVQQ59PwY74p4oT2j",
+  WhatsAppCh: "https://whatsapp.com/channel/0029VbBOVQQ59PwY74p4oT2j",
   discord: "https://discord.gg/P5JUaJKN69"
 };
 if (socialLinks.whatsapp) $('whatsappFloat').href = socialLinks.whatsapp;
-else $('whatsappFloat').addEventListener('click', e => { e.preventDefault(); alert('Tambahkan link saluran pada konfigurasi socialLinks.'); });
+else $('whatsappFloat').addEventListener('click', e => { e.preventDefault(); alert('https://whatsapp.com/channel/0029VbBOVQQ59PwY74p4oT2j.'); });
 if (socialLinks.discord) $('discordFloat').href = socialLinks.discord;
-else $('discordFloat').addEventListener('click', e => { e.preventDefault(); alert('Tambahkan link Discord pada konfigurasi socialLinks.'); });
+else $('discordFloat').addEventListener('click', e => { e.preventDefault(); alert('https://discord.gg/P5JUaJKN69.'); });
 
 // Soft UI tap sound, synthesized in-browser (no extra audio file needed).
 let audioCtx;
