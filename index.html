@@ -21,7 +21,6 @@
 .platform-btn:not(:disabled):hover{border-color:var(--pink);background:#4a1928}
 .download-close{margin-top:16px;width:100%;background:transparent}
 .download-note{display:block;margin-top:13px;color:var(--muted);font-size:12px}
-
 @media(max-width:760px){.nav{height:68px}.menu{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:#190b10;border-bottom:1px solid var(--line);padding:18px 5%;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.hero{padding-top:28px}.hero-card{min-height:390px;padding:25px;border-radius:25px}.stats{grid-template-columns:repeat(2,1fr);margin-bottom:42px}.grid{grid-template-columns:repeat(2,1fr)}.product-art{height:155px}.product-body{padding:14px}.commission{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.admin-grid{grid-template-columns:1fr}}
 @media(max-width:430px){.grid{grid-template-columns:1fr}.product-art{height:210px}.stat{padding:16px}.hero p{font-size:15px}}
 
@@ -217,8 +216,9 @@ a:focus-visible, button:focus-visible {
 </div></section>
 <section class="section" id="packs"><div class="section-head"><div><div class="eyebrow">DISCOVER MY WORK</div><h2>Texture & Packs</h2></div><p>Resource pack pilihan dan karya Minecraft. Klik tombol untuk menuju halaman download yang kamu sediakan.</p></div>
 <div class="grid" id="packGrid">
-<article class="card product"><div class="product-art"><img src="assets/logo1.png" alt="Ciso Not Found"></div><div class="product-body"><div class="tag">RESOURCE PACK</div><h3>Ciso Hungry 3D Tools</h3><p>Custom Minecraft tools dengan nuansa merah dan detail 3D.</p><div class="product-foot"><span class="price">FREE</span><button class="btn download-btn" type="button" data-pack="ciso-hungry">Download ↗</button></div></div></article>
+<article class="card product"><div class="product-art"><img src="assets/logo1.png" alt="Ciso Not Found"></div><div class="product-body"><div class="tag">RESOURCE PACK</div><h3>Ciso Hungry 3D Tools</h3><p>Showcase pack Minecraft dengan visual dan identitas khas 3D.</p><div class="product-foot"><span class="price">FREE</span><button class="btn download-btn" type="button" data-pack="ciso-hungry">Download ↗</button></div></div></article>
 <article class="card product"><div class="product-art"><img src="assets/logo2.png" alt="Ciso Not Found"></div><div class="product-body"><div class="tag">RESOURCE PACK</div><h3>Depth of Cyan</h3><p>Showcase pack Minecraft dengan visual dan identitas khas.</p><div class="product-foot"><span class="price">FREE</span><button class="btn download-btn" type="button" data-pack="depth-cyan">Download ↗</button></div></div></article>
+<article class="card product"><div class="product-art"><img src="assets/logo4.png" alt="Ciso Not Found"></div><div class="product-body"><div class="tag">RESOURCE PACK</div><h3>Red Spidey 3D Tools</h3><p>Showcase pack Minecraft dengan visual dan identitas khas.</p><div class="product-foot"><span class="price">FREE</span><button class="btn download-btn" type="button" data-pack="spidey">Download ↗</button></div></div></article>
 <article class="card product"><div class="product-art"><img src="assets/logo3.png" alt="Ciso Not Found"></div><div class="product-body"><div class="tag">MORE CREATIONS</div><h3>Coming Soon</h3><p>Karya berikutnya akan ditampilkan di sini.</p><div class="product-foot"><span class="price">SOON</span><span class="tiny">Stay tuned</span></div></div></article>
 </div></section>
 <section class="section" id="commission"><div class="section-head"><div><div class="eyebrow">WORK WITH ME</div><h2>Commission</h2></div><p>Butuh asset atau model Minecraft custom? Lihat informasi dan hubungi Cviko untuk diskusi pesanan.</p></div>
@@ -279,10 +279,14 @@ const packDownloads = {
     bedrock: "https://www.curseforge.com/minecraft-bedrock/texture-packs/ciso-hungry-3d-tools"
   },
   "depth-cyan": {
-    name: "Depth of Cyan",
+    name: "Depth of Cyan Tools",
     java: "https://sfl.gl/wtIFVP",
     bedrock: "https://sfl.gl/QS7la"
-  }
+  },
+  "spidey": {
+    name: "Red Spider 3D Tools",
+    java: "https://sfl.gl/wtIFVP",
+    bedrock: "https://sfl.gl/QS7la"
 };
 
 const downloadModal = $('downloadModal');
