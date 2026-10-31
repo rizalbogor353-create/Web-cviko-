@@ -490,7 +490,7 @@ function openDownloadPicker(packId) {
   activeDownload = packDownloads[packId];
   if (!activeDownload) return;
   $('downloadTitle').textContent = activeDownload.name;
-  $('downloadSubtitle').textContent = 'Pilih platform Minecraft untuk download.';
+  $('downloadSubtitle').textContent = 'Pilih platform Minecraft.';
   const artWrap = $('downloadArtWrap');
   const art = $('downloadArt');
   artWrap.classList.remove('show');
@@ -538,11 +538,11 @@ $('bedrockDownload').addEventListener('click', () => {
 
 // Ganti kedua URL ini dengan link saluran dan server Discord milikmu.
 const socialLinks = {
-  channel: "",
-  discord: ""
+  WhatsApp Ch: "https://whatsapp.com/channel/0029VbBOVQQ59PwY74p4oT2j",
+  discord: "https://discord.gg/P5JUaJKN69"
 };
-if (socialLinks.channel) $('channelFloat').href = socialLinks.channel;
-else $('channelFloat').addEventListener('click', e => { e.preventDefault(); alert('Tambahkan link saluran pada konfigurasi socialLinks.'); });
+if (socialLinks.whatsapp) $('whatsappFloat').href = socialLinks.whatsapp;
+else $('whatsappFloat').addEventListener('click', e => { e.preventDefault(); alert('Tambahkan link saluran pada konfigurasi socialLinks.'); });
 if (socialLinks.discord) $('discordFloat').href = socialLinks.discord;
 else $('discordFloat').addEventListener('click', e => { e.preventDefault(); alert('Tambahkan link Discord pada konfigurasi socialLinks.'); });
 
