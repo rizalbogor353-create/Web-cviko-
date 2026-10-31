@@ -199,7 +199,7 @@ function playUiSound() {
     osc.frequency.exponentialRampToValueAtTime(460, now + 0.075);
     filter.type = 'lowpass';
     filter.frequency.value = 1800;
-    gain.gain.setValueAtTime(1.0, now);
+    gain.gain.setValueAtTime(1.70, now);
     gain.gain.exponentialRampToValueAtTime(0.075, now + 0.008);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.095);
     osc.connect(filter); filter.connect(gain); gain.connect(audioCtx.destination);
